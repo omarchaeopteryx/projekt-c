@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 
 int main(void)
 {
@@ -8,8 +10,8 @@ int main(void)
    strcpy(a[1], "What is the sound of one hand clapping?");
    strcpy(a[2], "To study Buddhism is to study ourselves. To study ourselves is to forget ourselves.");
    strcpy(a[3], "Koan four");
-   strcpy(a[4], "Koan five)";
-   strcpy(a[5], "Koan six)";
+   strcpy(a[4], "Koan five");
+   strcpy(a[5], "Koan six");
 
    // Run the code.
   printf("You seek Zen!\n\n%s\n", a[0]);
