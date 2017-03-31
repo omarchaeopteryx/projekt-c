@@ -1,9 +1,14 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <time.h>
 
 int main(void)
 {
+   // Generating a random index number.
+   srand(time(NULL)); // <-- Source: Stack Overflow
+   int r = rand() % 6; // <-- Note we are hard-coding limit.  
+
    // Storing the dictionary of Zen koans.
    char a[6][100]; // <-- Note we must pre-set the size.
    strcpy(a[0], "Odd and even are on one die.");
@@ -14,7 +19,7 @@ int main(void)
    strcpy(a[5], "To a sincere student, every day is a fortunate day.");
 
    // Run the code.
-  printf("You seek Zen!\n\n%s\n", a[0]);
+  printf("You seek Zen!\n\n%s\n", a[r]);
   
   // Terminate the program.
   exit(0);
