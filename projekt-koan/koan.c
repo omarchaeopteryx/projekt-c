@@ -20,7 +20,7 @@ int main(void)
 
    // Run the code.
   printf("You seek Zen!\n\n%s\n", a[r]);
-  
+  printf("\n\n\n");  
   // Terminate the program.
   exit(0);
 }
